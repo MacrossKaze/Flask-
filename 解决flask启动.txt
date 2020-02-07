@@ -1,0 +1,15 @@
+https://stackoverflow.com/questions/55372962/error-in-running-flask-on-anaconda-prompt
+I want start the flask server using anaconda Prompt. while starting,it is showing the following error,how to resolve error. I am getting the following error.
+
+Environment: production WARNING: Do not use the development server in a production environment. Use a production WSGI server instead.
+Debug mode: off Usage: flask run [OPTIONS]
+Error: Could not locate a Flask application. You did not provide the "FLASK_APP" environment variable, and a "wsgi.py" or "app.py" module was not found in the current directory.
+
+
+Have you used:
+
+$ export FLASK_APP=yourfilename.py 引入环境变量
+
+$ export FLASK_DEBUG=1 更新py和html时网页会实时更新
+
+$ flask run 
